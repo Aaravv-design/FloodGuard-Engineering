@@ -192,7 +192,7 @@ startButton.addEventListener("click", () => {
     water.style.height = "0%";
 
     barrier.style.transform =
-        "translateX(-50%) translateY(120px)";
+        "translateX(-50%) translateY(0)";
 
     let level = 0;
 

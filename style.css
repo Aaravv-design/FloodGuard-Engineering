@@ -1089,22 +1089,69 @@ align-items:center;
 
 position:relative;
 
-height:520px;
+width:100%;
 
-border-radius:28px;
+height:550px;
 
 overflow:hidden;
 
-background:
+border-radius:20px;
 
-linear-gradient(
-180deg,
-#62B8FF 0%,
-#A8E0FF 45%,
-#DFF6FF 100%
-);
+background:linear-gradient(#8fc9ff,#dff4ff);
 
-box-shadow:var(--shadow);
+}
+
+.scene-house{
+
+position:absolute;
+
+bottom:70px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:220px;
+
+z-index:20;
+
+}
+
+#barrier{
+
+position:absolute;
+
+bottom:55px;
+
+left:50%;
+
+transform:translateX(-50%) translateY(180px);
+
+width:360px;
+
+z-index:30;
+
+transition:1.2s ease;
+
+}
+
+#water{
+
+position:absolute;
+
+left:0;
+
+bottom:0;
+
+width:100%;
+
+height:0;
+
+background:rgba(0,130,255,.7);
+
+transition:2s;
+
+z-index:10;
 
 }
 

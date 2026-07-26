@@ -387,9 +387,9 @@ TECHNOLOGY
 
 </section>
 
-<!-- =========================
+<!-- ==========================================================
 SIMULATION
-========================= -->
+========================================================== -->
 
 <section id="simulation" class="simulation">
 
@@ -397,41 +397,81 @@ SIMULATION
 
         <p>LIVE DEMONSTRATION</p>
 
-        <h2>Interactive Flood Simulation</h2>
+        <h2>FloodGuard Interactive Simulation</h2>
 
     </div>
 
     <div class="simulation-wrapper">
 
+        <!-- ================= SCENE ================= -->
+
         <div class="simulation-scene">
+
+            <!-- Sky -->
 
             <div class="scene-sky"></div>
 
+            <!-- Clouds -->
+
+            <div class="scene-cloud cloud1"></div>
+
+            <div class="scene-cloud cloud2"></div>
+
+            <!-- Rain -->
+
             <div class="scene-rain"></div>
+
+            <!-- Lightning -->
 
             <div class="scene-lightning"></div>
 
-            <img src="assets/house.svg"
-                 alt="House"
-                 class="scene-house">
+            <!-- Ground -->
 
-            <img src="assets/barrier.svg"
-                 alt="Barrier"
-                 id="barrier">
+            <div class="ground"></div>
+
+            <!-- House -->
+
+            <img
+                src="assets/house.svg"
+                class="scene-house"
+                alt="House">
+
+            <!-- Barrier -->
+
+            <img
+                src="assets/barrier.svg"
+                id="barrier"
+                alt="Flood Barrier">
+
+            <!-- Water -->
 
             <div id="water">
 
-                <svg class="wave"
-                     viewBox="0 0 1200 120"
-                     preserveAspectRatio="none">
+                <svg
+                    class="wave"
+                    viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
 
-                    <path d="M0,60 C150,120 350,0 600,60 C850,120 1050,0 1200,60 L1200,120 L0,120 Z"></path>
+                    <path
+                        d="M0,60
+                           C150,120
+                           350,0
+                           600,60
+                           C850,120
+                           1050,0
+                           1200,60
+                           L1200,120
+                           L0,120
+                           Z">
+                    </path>
 
                 </svg>
 
             </div>
 
         </div>
+
+        <!-- ================= DASHBOARD ================= -->
 
         <div class="simulation-panel">
 
@@ -441,7 +481,11 @@ SIMULATION
 
                 <span>Status</span>
 
-                <strong id="statusText">Standby</strong>
+                <strong id="statusText">
+
+                    Standby
+
+                </strong>
 
             </div>
 
@@ -449,7 +493,11 @@ SIMULATION
 
                 <span>Barrier</span>
 
-                <strong id="barrierText">Retracted</strong>
+                <strong id="barrierText">
+
+                    Retracted
+
+                </strong>
 
             </div>
 
@@ -457,7 +505,11 @@ SIMULATION
 
                 <span>Water Level</span>
 
-                <strong id="waterText">0%</strong>
+                <strong id="waterText">
+
+                    0%
+
+                </strong>
 
             </div>
 
@@ -465,14 +517,39 @@ SIMULATION
 
                 <span>House</span>
 
-                <strong id="houseText">Safe</strong>
+                <strong id="houseText">
+
+                    Safe
+
+                </strong>
 
             </div>
 
-            <button id="startSimulation"
-                    class="btn primary">
+            <div class="status-item">
+
+                <span>System</span>
+
+                <strong id="systemText">
+
+                    Ready
+
+                </strong>
+
+            </div>
+
+            <button
+                id="startSimulation"
+                class="btn primary">
 
                 Start Simulation
+
+            </button>
+
+            <button
+                id="resetSimulation"
+                class="btn secondary">
+
+                Reset
 
             </button>
 
